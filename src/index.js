@@ -1,5 +1,11 @@
 // UI LOGIC
 
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+import { Player, rollDice } from './dice-logic.js';
+
 let player1 = new Player();
 let player2 = new Player();
 

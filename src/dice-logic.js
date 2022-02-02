@@ -1,14 +1,16 @@
 // BUSINESS LOGIC
 
-function Player() {
+export function Player() {
 	this.roll = 0;
 	this.tempScore = 0;
 	this.totalScore = 0;
 }
 
-let rollDice = function () {
+// Changed syntax for jest testing
+
+export function rollDice() {
 	return Math.floor(Math.random() * 6 + 1);
-};
+}
 
 Player.prototype.rollPoints = function () {
 	if (this.roll === 1) {
@@ -27,6 +29,5 @@ Player.prototype.hold = function () {
 Player.prototype.winner = function () {
 	if (this.totalScore >= 100) {
 		alert('Player 1 wins!');
-	} //else { this.totalScore += this.tempScore;
-	//}
+	}
 };
